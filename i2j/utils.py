@@ -4,7 +4,7 @@ from typing import Any, Union
 
 from i2j.objects import ImageData, ImageJson
 
-async def images2jsonList(images:list[ImageData])->list[ImageJson]:
+async def images_2_json_list(images:list[ImageData])->list[ImageJson]:
     """
     Convert a list of images to a JSON-compatible format.
     Each image is represented as a dictionary with filename, content_type, and base64 encoded content.

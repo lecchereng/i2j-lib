@@ -2,7 +2,7 @@ import asyncio
 import json
 
 from i2j.objects import ImageData
-from i2j.utils import images2jsonList, insert_at_path
+from i2j.utils import images_2_json_list, insert_at_path
 
 # Funzione principale per eseguire lo script
 async def main():
@@ -15,7 +15,7 @@ async def main():
     image_objects = [ImageData(p) for p in image_paths]
 
     # 3. Converte le immagini in base64
-    images_json = await images2jsonList(image_objects)
+    images_json = await images_2_json_list(image_objects)
 
     # 4. Inserisci immagini nel JSON
     updated_data = insert_at_path(data, "root/elements[name=anotherExample]/children[1]", images_json, mode="add")
