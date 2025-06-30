@@ -1,0 +1,47 @@
+{
+    "root":{
+        "elements":[
+            {
+                "type":"element",
+                "name":"example",
+                "attributes":{
+                    "id":"123",
+                    "class":"test"
+                },
+                "children":[
+                    {
+                        "type":"text",
+                        "content":"This is an example text."
+                    }
+                ]
+            },
+            {
+                "type":"element",
+                "name":"anotherExample",
+                "attributes":{
+                    "id":"456",
+                    "class":"sample"
+                },
+                "children":[
+                    {
+                        "type":"text",
+                        "content":"This is another example text."
+                    },
+                    {
+                        "type":"element",
+                        "name":"nestedElement",
+                        "attributes":{
+                            "id":"789"
+                        },
+                        "children":[
+                            {
+                                "type":"text",
+                                "content":"This is nested text."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
