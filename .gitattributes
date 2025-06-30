@@ -1,0 +1,17 @@
+# Treat all text files without a CR (as we have Docker)
+* text eol=lf
+*.zip binary
+*.xls binary
+*.xlsx binary
+*.doc binary
+*.docx binary
+*.ppt binary
+*.pptx binary
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.bmp binary
+*.ico binary
+*.svg binary
